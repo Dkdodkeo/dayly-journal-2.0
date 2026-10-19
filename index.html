@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ежедневник</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="nav">
+      <button class="ib chev" id="prev" aria-label="Предыдущий день">‹</button>
+      <button class="ib chev" id="next" aria-label="Следующий день">›</button>
+    </div>
+    <button class="ib" id="today">Сегодня</button>
+  </div>
+  <h1 id="title">Сегодня</h1>
+  <div class="date" id="date"></div>
+  <div class="prog">
+    <div class="row"><span>Выполнено</span><span id="cnt">0 из 0</span></div>
+    <div class="track"><div class="fill" id="fill"></div></div>
+  </div>
+  <div id="list"></div>
+  <button class="ib clear" id="clear" hidden>Удалить выполненные</button>
+</div>
+<div class="bar">
+  <div class="add">
+    <input id="inp" type="text" placeholder="Новая задача" enterkeyhint="done" autocomplete="off" maxlength="200">
+    <button id="addBtn" aria-label="Добавить">+</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
